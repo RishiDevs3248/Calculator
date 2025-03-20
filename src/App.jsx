@@ -47,6 +47,7 @@ function App() {
             </div>
             {/* Buttons */}
             <div className='bg-[#FCFCFC] h-[70%] rounded-3xl'>
+              {/* Make an custom button component for reusability*/}
               <button className='bg-[#FDFDFD] h-[50px] w-[50px] shadow-md'>
                 1
               </button>
