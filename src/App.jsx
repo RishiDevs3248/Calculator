@@ -2,6 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import Button from './components/Button'
 
 function App() {
   let [inputVal, setInputVal] = useState('')
@@ -40,17 +41,46 @@ function App() {
 
         <div className='bg-white h-[95%] w-full flex justify-center items-center '>
           {/* card */}
-          <div className='bg-[#ECECED] min-h-[700px] h-[90%] min-w-[600px] w-[40%] rounded-3xl shadow-lg'>
+          <div className='bg-[#ECECED] min-h-[600px] h-[600px] min-w-[400px] w-[400px] rounded-3xl shadow-lg'>
             {/* Screen */}
-            <div className='h-[30%]'>
-              <input type='text' value={inputVal}></input>
+            {/* Set this --------------------------- */}
+            <div className='h-[30%] rounded-[25%] bg-red-500'>
+
+              <input type='text' className='bg-green-500 ' value={inputVal}></input>
             </div>
             {/* Buttons */}
-            <div className='bg-[#FCFCFC] h-[70%] rounded-3xl'>
-              {/* Make an custom button component for reusability*/}
-              <button className='bg-[#FDFDFD] h-[50px] w-[50px] shadow-md'>
-                1
-              </button>
+            <div className='bg-[#FCFCFC] h-[70%] rounded-3xl p-[20px] flex flex-col justify-evenly'>
+              <div className='flex justify-evenly'>
+                <Button text="1" value="1" Color="text-red-500"></Button>
+                <Button text="1" value="1" Color="text-red-500"></Button>
+                <Button text="1" value="1" Color="text-red-500"></Button>
+                <Button text="1" value="1" Color="text-red-500"></Button>
+              </div>
+              <div className='flex justify-evenly'>
+                <Button text="1" value="1" Color="text-red-500"></Button>
+                <Button text="1" value="1" Color="text-red-500"></Button>
+                <Button text="1" value="1" Color="text-red-500"></Button>
+                <Button text="1" value="1" Color="text-red-500"></Button>
+              </div>
+              <div className='flex justify-evenly'>
+                <Button text="1" value="1" Color="text-red-500"></Button>
+                <Button text="1" value="1" Color="text-red-500"></Button>
+                <Button text="1" value="1" Color="text-red-500"></Button>
+                <Button text="1" value="1" Color="text-red-500"></Button>
+              </div>
+              <div className='flex justify-evenly'>
+                <Button text="1" value="1" Color="text-red-500"></Button>
+                <Button text="1" value="1" Color="text-red-500"></Button>
+                <Button text="1" value="1" Color="text-red-500"></Button>
+                <Button text="1" value="1" Color="text-red-500"></Button>
+              </div>
+              <div className='flex justify-evenly'>
+                <Button text="1" value="1" Color="text-red-500"></Button>
+                <Button text="1" value="1" Color="text-red-500"></Button>
+                <Button text="1" value="1" Color="text-red-500"></Button>
+                <Button text="1" value="1" Color="text-red-500"></Button>
+              </div>
+
             </div>
           </div>
         </div>
